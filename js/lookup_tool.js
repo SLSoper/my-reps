@@ -378,10 +378,10 @@ function checkRelevance(policy, office_name) {
             //Executives;
             return true;
         }
-        else if (office_name['name'].search('Representative|Senator')) {
-            //Representatives
-            return true;
-        }
+        else if (office_name['name'].search('Representative|Senator') > -1) {
+           //Representatives
+           return true;
+       }
         else {
             //else
             return false;
